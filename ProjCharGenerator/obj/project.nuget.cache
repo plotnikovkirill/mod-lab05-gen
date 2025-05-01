@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JTP3q+venMo=",
+  "dgSpecHash": "2NrfXSTGUBc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Kirill\\source\\repos\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kirill\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Kirill\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Kirill\\.nuget\\packages\\system.text.encoding.codepages\\9.0.4\\system.text.encoding.codepages.9.0.4.nupkg.sha512"
   ],
   "logs": []

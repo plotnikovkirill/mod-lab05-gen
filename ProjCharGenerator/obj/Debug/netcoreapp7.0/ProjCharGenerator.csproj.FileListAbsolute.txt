@@ -13,3 +13,6 @@ C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreap
 C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.pdb
 C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.genruntimeconfig.cache
 C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ref\ProjCharGenerator.dll
+C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp7.0\System.Text.Encoding.CodePages.dll
+C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.csproj.AssemblyReference.cache
+C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjChar.A8B6ABD6.Up2Date

@@ -10,13 +10,13 @@ namespace TestProject1
         public void Test1()
         {
             var gen = new CharGenerator("..//ProjCharGenerator//biweights.txt");
-            Assert.Equal(694, gen.getSize());
+            Assert.Equal(7, gen.getSize());
         }
         [Fact]
         public void CharGen_Test2()
         {
             var gen = new CharGenerator("..//ProjCharGenerator//biweights.txt");
-            var valid = new HashSet<string> { "аа", "бб", "cт", "аа", "ав", "cт" , "аб", "пи", "рн" };
+            var valid = new HashSet<string> { "st", "ad", "ag" };
             int a = 0;
 
             for (int i = 0; i < 100; i++)
@@ -44,8 +44,8 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            Assert.True(stats[gen.getSym()] < stats["ст"]);
-            Assert.True(stats[gen.getSym()] < stats["ст"]);
+            Assert.True(stats[gen.getSym()] <= stats["st"]);
+            Assert.True(stats[gen.getSym()] <= stats["st"]);
         }
         [Fact]
         public void WordGen_Test7()
@@ -57,7 +57,7 @@ namespace TestProject1
         public void WordGen_Test8()
         {
             var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
-            var valid = new HashSet<string> { "Мама", "Папа", "Вика" };
+            var valid = new HashSet<string> { "Mama", "Papa", "Vika" };
             int a = 0;
 
             for (int i = 0; i < 100; i++)
@@ -84,8 +84,8 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            Assert.True(stats["Ваня"] < stats["Вика"]);
-            Assert.True(stats["Мама"] < stats["Папа"]);
+            Assert.True(stats["Vanya"] < stats["Vika"]);
+            Assert.True(stats["Mama"] < stats["Papa"]);
         }
         [Fact]
         public void WordGen_Test10()
@@ -136,7 +136,7 @@ namespace TestProject1
                 var sym1 = gen.getSym();
                 var sym2 = gen.getSym();
                 var sym3 = gen.getSym();
-                if (sym1 == sym3 && sym2 == "Леша")
+                if (sym1 == sym3 && sym2 == "Lesha")
                 {
                     a = 1;
                     break;

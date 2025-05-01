@@ -1,6 +1,6 @@
-1 Вика aa aa 5.0
-2 Папа aa aa 3.0
-3 Мама aa aa 2.0
-4 Леша aa aa 1.0
-5 Ваня aa aa 1.0
-6 Миша aa aa 0.0
+1 Vika aa aa 5.0
+2 Papa aa aa 3.0
+3 Mama aa aa 2.0
+4 Lesha aa aa 1.0
+5 Vanya aa aa 1.0
+6 Misha aa aa 0.0

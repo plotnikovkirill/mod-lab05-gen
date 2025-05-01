@@ -5,7 +5,7 @@ using System.Text;
 
 namespace generator
 {
-    class CharGenerator 
+    public class CharGenerator 
     {
         private List<string> syms = new List<string>();
         private List<int> weights = new List<int>();
@@ -14,9 +14,9 @@ namespace generator
         private int size;
         private int summ;
         private Random random = new Random();
-        public CharGenerator() 
+        public CharGenerator(string name) 
         {
-            using (StreamReader reader = new StreamReader(Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "biweights.txt"), Encoding.UTF8))
+            using (StreamReader reader = new StreamReader(Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, name), Encoding.UTF8))
             {
                 string input;
                 string[] line;
@@ -45,17 +45,21 @@ namespace generator
             }
             return "";
         }
+        public int getSize()
+        {
+            return syms.Count;
+        }
     }
-    class WordGenerator
+    public class WordGenerator
     {
         private List<string> syms = new List<string>();
         private List<Double> weights = new List<Double>();
         private List<Double> upper_bounds = new List<Double>();
         private Double summ;
         private Random random = new Random();
-        public WordGenerator()
+        public WordGenerator(string n)
         {
-            using (StreamReader reader = new StreamReader(Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "wordweights.txt"), Encoding.UTF8))
+            using (StreamReader reader = new StreamReader(Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, n), Encoding.UTF8))
             {
                 string input;
                 string[] line;
@@ -83,12 +87,16 @@ namespace generator
             }
             return "";
         }
+        public int getSize()
+        {
+            return syms.Count;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
+            CharGenerator gen = new CharGenerator("biweights.txt");
             SortedDictionary<string, int> stat = new SortedDictionary<string, int>();
             string ress = "";
             for (int i = 0; i < 1000; i++)
@@ -105,7 +113,7 @@ namespace generator
             {
                 reader.WriteLine(ress);
             }
-            WordGenerator genWord = new WordGenerator();
+            WordGenerator genWord = new WordGenerator("wordweights.txt");
             SortedDictionary<string, int> statWord = new SortedDictionary<string, int>();
             ress = "";
             for (int i = 0; i < 1000; i++)

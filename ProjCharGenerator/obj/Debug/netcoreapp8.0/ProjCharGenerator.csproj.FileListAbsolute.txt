@@ -17,3 +17,9 @@ C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreap
 C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\runtimes\win\lib\net8.0\System.Text.Encoding.CodePages.dll
 C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.csproj.AssemblyReference.cache
 C:\Users\Kirill\source\repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjChar.A8B6ABD6.Up2Date
+C:\Users\Kirill\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kirill\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ScottPlot.dll
+C:\Users\Kirill\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\System.Drawing.Common.dll
+C:\Users\Kirill\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kirill\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Kirill\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll

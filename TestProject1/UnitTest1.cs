@@ -10,13 +10,13 @@ namespace TestProject1
         public void Test1()
         {
             var gen = new CharGenerator("..//ProjCharGenerator//biweights.txt");
-            Assert.Equal(7, gen.getSize());
+            Assert.Equal(694, gen.getSize());
         }
         [Fact]
         public void CharGen_Test2()
         {
             var gen = new CharGenerator("..//ProjCharGenerator//biweights.txt");
-            var valid = new HashSet<string> { "st", "ad", "ag" };
+            var valid = new HashSet<string> { "ст", "ам", "ва" };
             int a = 0;
 
             for (int i = 0; i < 100; i++)
@@ -44,20 +44,20 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            Assert.True(stats[gen.getSym()] <= stats["st"]);
-            Assert.True(stats[gen.getSym()] <= stats["st"]);
+            Assert.True(stats[gen.getSym()] <= stats["ст"]);
+            Assert.True(stats[gen.getSym()] <= stats["ст"]);
         }
         [Fact]
         public void WordGen_Test7()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
-            Assert.Equal(6, gen.getSize());
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
+            Assert.Equal(1000, gen.getSize());
         }
         [Fact]
         public void WordGen_Test8()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
-            var valid = new HashSet<string> { "Mama", "Papa", "Vika" };
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
+            var valid = new HashSet<string> { "и", "в", "не" };
             int a = 0;
 
             for (int i = 0; i < 100; i++)
@@ -73,7 +73,7 @@ namespace TestProject1
         [Fact]
         public void WordGen_Test9()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
             var stats = new Dictionary<string, int>();
 
             for (int i = 0; i < 10000; i++)
@@ -84,8 +84,8 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            Assert.True(stats["Vanya"] < stats["Vika"]);
-            Assert.True(stats["Mama"] < stats["Papa"]);
+            Assert.True(stats["который"] < stats["и"]);
+            Assert.True(stats["для"] < stats["в"]);
         }
         [Fact]
         public void WordGen_Test10()
@@ -128,7 +128,7 @@ namespace TestProject1
         [Fact]
         public void WordGen_Test12()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
             var stats = new Dictionary<string, int>();
             int a = 0;
             for (int i = 0; i < 10000; i++)
@@ -136,7 +136,7 @@ namespace TestProject1
                 var sym1 = gen.getSym();
                 var sym2 = gen.getSym();
                 var sym3 = gen.getSym();
-                if (sym1 == sym3 && sym2 == "Lesha")
+                if (sym1 == sym3 && sym2 == "и")
                 {
                     a = 1;
                     break;

@@ -16,7 +16,7 @@ namespace TestProject1
         public void CharGen_Test2()
         {
             var gen = new CharGenerator("..//ProjCharGenerator//biweights.txt");
-            var valid = new HashSet<string> { "ст", "ам", "ва" };
+            var valid = new HashSet<string> { "st", "am", "va" };
             int a = 0;
 
             for (int i = 0; i < 100; i++)
@@ -44,8 +44,8 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            Assert.True(stats[gen.getSym()] <= stats["ст"]);
-            Assert.True(stats[gen.getSym()] <= stats["ст"]);
+            Assert.True(stats[gen.getSym()] <= stats["st"]);
+            Assert.True(stats[gen.getSym()] <= stats["st"]);
         }
         [Fact]
         public void WordGen_Test7()
@@ -57,7 +57,7 @@ namespace TestProject1
         public void WordGen_Test8()
         {
             var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
-            var valid = new HashSet<string> { "и", "в", "не" };
+            var valid = new HashSet<string> { "i", "v", "ne" };
             int a = 0;
 
             for (int i = 0; i < 100; i++)
@@ -84,8 +84,8 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            Assert.True(stats["который"] < stats["и"]);
-            Assert.True(stats["для"] < stats["в"]);
+            Assert.True(stats["kotoryy"] < stats["i"]);
+            Assert.True(stats["dlya"] < stats["v"]);
         }
         [Fact]
         public void WordGen_Test10()
@@ -110,7 +110,7 @@ namespace TestProject1
         [Fact]
         public void WordGen_Test11()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
             var stats = new Dictionary<string, int>();
             int a = 0;
             for (int i = 0; i < 10000; i++)
@@ -136,7 +136,7 @@ namespace TestProject1
                 var sym1 = gen.getSym();
                 var sym2 = gen.getSym();
                 var sym3 = gen.getSym();
-                if (sym1 == sym3 && sym2 == "и")
+                if (sym1 == sym3 && sym2 == "i")
                 {
                     a = 1;
                     break;
@@ -147,7 +147,7 @@ namespace TestProject1
         [Fact]
         public void WordGen_Test13()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
             var stats = new Dictionary<string, int>();
             int a = 0;
             for (int i = 0; i < 10000; i++)

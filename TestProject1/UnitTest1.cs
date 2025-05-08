@@ -90,7 +90,7 @@ namespace TestProject1
         [Fact]
         public void WordGen_Test10()
         {
-            var gen = new WordGenerator("..//ProjCharGenerator//wordweights.txt");
+            var gen = new WordGenerator("..//ProjCharGenerator//wordweights2.txt");
             var stats = new Dictionary<string, int>();
             int a = 0;
             for (int i = 0; i < 10000; i++)
@@ -101,7 +101,7 @@ namespace TestProject1
                 else
                     stats.Add(sym, 1);
             }
-            if (stats.ContainsKey("Миша"))
+            if (stats.ContainsKey("bystryy"))
             {
                 a = 1;
             }
